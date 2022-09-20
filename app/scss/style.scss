@@ -306,3 +306,55 @@
   line-height: 24px;
   color: $light-main;
 }
+// conversion
+
+.get {
+  position: relative;
+}
+
+.get__title {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.get__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0px 0px;
+}
+
+.get__item {
+  max-width: 367px;
+  border-radius: 8px;
+  border: 2px solid rgba(5, 95, 225, 1);
+  padding: 60px 36px;
+  height: 619px;
+  z-index: 2;
+  background-color: #fff;
+}
+
+.get__img {
+  text-align: center;
+}
+
+.get__item-title {
+  margin-top: 30px;
+}
+
+.get__text {
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.get__blue {
+  position: absolute;
+  bottom: -70px;
+  z-index: 1;
+  left: 0;
+  width: 100%;
+  height: 345px;
+  background-color: $primary-dark;
+}
