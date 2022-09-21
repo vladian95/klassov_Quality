@@ -135,9 +135,9 @@
 }
 
 .lost-profit__conteiner {
-  margin: 0 auto;
-  max-width: 905px;
+  max-width: 895px;
   padding: 100px 15px;
+  margin: 0 auto;
 }
 
 .lost-profit__title {
@@ -145,6 +145,7 @@
   font-size: 36px;
   line-height: 46px;
   margin-bottom: 80px;
+  max-width: 837px;
   span {
     color: rgba(5, 95, 225, 1);
   }
