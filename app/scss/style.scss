@@ -1,5 +1,6 @@
 @import '_vars';
 @import '_global';
+@import '_media';
 
 .header {
   height: 100vh;
@@ -14,6 +15,10 @@
   max-width: 1310px;
   margin: 0 auto;
   padding: 0px 15px;
+}
+
+.header__logo--mobile {
+  display: none;
 }
 
 .header__list {
@@ -46,6 +51,29 @@
     width: 24px;
     height: 24px;
   }
+}
+
+.header__burger {
+  display: none;
+  cursor: pointer;
+}
+
+.header__burger-line {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: $main;
+  margin: 6px auto;
+  border-radius: 8px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  &:nth-child(2) {
+    width: 14px;
+  }
+}
+
+.header__menu--mobile {
+  display: none;
 }
 
 .header__department {
@@ -85,7 +113,7 @@
 }
 
 .header__btn {
-  width: 240px;
+  width: 333px;
   background-color: $primary-dark;
   border: none;
   border-radius: 8px;
@@ -209,7 +237,7 @@
 
 .news__btn {
   margin-top: 40px;
-  width: 180px;
+  width: 333px;
   padding: 20px 0px;
   border-radius: 8px;
   border: none;
@@ -219,6 +247,7 @@
   font-size: 20px;
   line-height: 24px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 // news
 
@@ -378,13 +407,14 @@
 }
 
 .zoom__btn {
-  width: 350px;
+  width: 333px;
   padding: 20px 0px;
   border-radius: 8px;
   text-transform: uppercase;
   color: #fff;
   background-color: $primary-dark;
   border: none;
+  cursor: pointer;
 }
 // zoom
 
