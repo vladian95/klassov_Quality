@@ -68,6 +68,15 @@
       display: none;
     }
   }
+  .zoom {
+    .zoom__inner {
+      flex-direction: column;
+      padding: 40px 0px;
+    }
+    .zoom__text {
+      margin-bottom: 40px;
+    }
+  }
 }
 @media (max-width: 970px) {
   .header {
@@ -351,6 +360,16 @@
   .news {
     .news__text {
       max-width: 400px;
+    }
+  }
+  .zoom {
+    .zoom__text {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 30px;
+    }
+    .zoom__btn {
+      width: 338px;
     }
   }
 }
