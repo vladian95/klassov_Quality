@@ -48,6 +48,26 @@
       }
     }
   }
+  .get {
+    background-color: $primary;
+    padding: 40px 0px;
+    .get__title {
+      margin: 0;
+      color: #fff;
+    }
+    .get__inner {
+      flex-direction: column;
+      margin: 20px 0px 0px 0px;
+    }
+    .get__item {
+      & + .get__item {
+        margin-top: 20px;
+      }
+    }
+    .get__blue {
+      display: none;
+    }
+  }
 }
 @media (max-width: 970px) {
   .header {
@@ -280,6 +300,23 @@
       font-weight: 400;
       font-size: 20px;
       line-height: 24px;
+    }
+  }
+  .get {
+    .get__title {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 30px;
+    }
+    .get__item {
+      padding: 20px;
+      height: auto;
+    }
+    .get__item-title {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 30px;
+      margin-top: 20px;
     }
   }
 }
