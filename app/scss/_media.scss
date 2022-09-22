@@ -38,6 +38,16 @@
       }
     }
   }
+  .conversion {
+    .conversion__item {
+      width: 49%;
+    }
+    .conversion__person {
+      img {
+        width: 100%;
+      }
+    }
+  }
 }
 @media (max-width: 970px) {
   .header {
@@ -218,6 +228,58 @@
         font-size: 20px;
         line-height: 24px;
       }
+    }
+  }
+  .work {
+    padding: 40px 0px;
+    .work__row {
+      padding: 20px;
+    }
+    .work__title {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 30px;
+      margin-bottom: 20px;
+    }
+    .work__text {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 24px;
+      width: 60%;
+    }
+    .work__number {
+      height: 55px;
+      width: 55px;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+  body {
+    .conversion {
+      padding: 40px 0px;
+    }
+    .conversion__item {
+      padding: 20px 10px;
+    }
+    .conversion__row {
+      padding: 10px 0px;
+    }
+    .conversion__title {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 30px;
+      margin-bottom: 20px;
+    }
+    .conversion__number {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 24px;
+    }
+    .conversion__text {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
     }
   }
 }
