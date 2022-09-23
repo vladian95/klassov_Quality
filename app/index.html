@@ -86,7 +86,9 @@
               Поднимаем конверсию на 15-50% с тем же количеством заявок
             </p>
             <div class="header__box-btn">
-              <button class="header__btn">Хочу узнать как</button>
+              <button data-popup-target="#popup" class="header__btn">
+                Хочу узнать как
+              </button>
             </div>
           </div>
           <div class="header__right">
@@ -204,7 +206,9 @@
               отдела продаж
             </p>
             <div class="news__box-btn">
-              <button class="news__btn">Хочу отчет</button>
+              <button data-popup-target="#popup" class="news__btn">
+                Хочу отчет
+              </button>
             </div>
           </div>
         </div>
@@ -372,11 +376,35 @@
               Еще не верите в результативность нашего предложения?
               <span>Бесплатно разберем ваш отдел продаж</span> через ZOOM
             </p>
-            <button class="zoom__btn">Оставить заявку</button>
+            <button data-popup-target="#popup" class="zoom__btn">
+              Оставить заявку
+            </button>
           </div>
         </div>
       </div>
     </section>
+
+    <section class="popup" id="popup">
+      <div class="popup__top">
+        <div class="popup__content">
+          <p class="popup__title">Оставить заявку</p>
+          <div class="popup__text">Представьтесь и мы с вами свяжемся</div>
+        </div>
+        <button data-popup__btn class="popup__btn">
+          <img src="images/popupX.svg" alt="close" />
+        </button>
+      </div>
+      <form class="popup__form">
+        <label class="popup__label">Ваше имя*</label>
+        <input class="popup__input" type="text" />
+        <label class="popup__label">Телефон*</label>
+        <input class="popup__input" type="text" />
+        <label class="popup__label">Ваш e-mail*</label>
+        <input class="popup__input" type="text" />
+        <button class="popup__form-btn">Отправить</button>
+      </form>
+    </section>
+    <div id="popup-bg"></div>
 
     <footer class="footer">
       <div class="container">

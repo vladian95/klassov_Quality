@@ -360,6 +360,25 @@
       margin-top: 20px;
     }
   }
+  body {
+    .popup {
+      width: 340px;
+      .popup__top {
+        padding: 20px;
+      }
+      .popup__form {
+        padding: 20px;
+      }
+      .popup__title {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+      }
+      .popup__text {
+        display: none;
+      }
+    }
+  }
 }
 
 @media (max-width: 550px) {
