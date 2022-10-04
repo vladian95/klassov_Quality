@@ -56,7 +56,10 @@ function closePopup(popup) {
 // SCROLL
 
 const scrollFunc = () => {
-  const links = document.querySelectorAll('.header__list a');
+  const links = document.querySelectorAll(
+    '.header__list a',
+    '.header__link--mobile'
+  );
 
   links.forEach((element) => {
     element.addEventListener('click', (event) => {
