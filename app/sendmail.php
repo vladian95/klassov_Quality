@@ -11,11 +11,11 @@
 	$mail->IsHTML(true);
 
 	//От кого письмо
-	$mail->setFrom('указать!', 'Фрилансер по жизни');
+	$mail->setFrom('kvankvan1995@gmail.com', 'Фрилансер по жизни');
 	//Кому отправить
-	$mail->addAddress('указать!');
+	$mail->addAddress('kvankvan1995@gmail.com');
 	//Тема письма
-	$mail->Subject = 'Привет! Это "Фрилансер по жизни"';
+	$mail->Subject = 'hello its your web site';
 
 	//Рука
 	// $hand = "Правая";
