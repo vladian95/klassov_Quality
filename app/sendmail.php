@@ -5,10 +5,13 @@
 	require 'phpmailer/src/Exception.php';
 	require 'phpmailer/src/PHPMailer.php';
 
+
 	$mail = new PHPMailer(true);
 	$mail->CharSet = 'UTF-8';
 	$mail->setLanguage('ru', 'phpmailer/language/');
 	$mail->IsHTML(true);
+
+	
 
 	//От кого письмо
 	$mail->setFrom('kvankvan1995@gmail.com', 'Фрилансер по жизни');
