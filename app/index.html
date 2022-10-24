@@ -37,7 +37,7 @@
           <li class="header__list header__list--delete">
             <a class="header__link" href="#footer"> контакты </a>
           </li>
-          <li class="header__list--phone">
+          <li>
             <a class="header__link header__link--phone" href="tel:77008369679">
               +77008369679
             </a>
@@ -396,12 +396,22 @@
       </div>
       <form action="sendmail.php" method="POST" class="popup__form">
         <label class="popup__label">Ваше имя*</label>
-        <input class="popup__input" type="text" name="user_name" />
+        <input class="popup__input" type="text" name="user_name" id="inpName" />
         <label class="popup__label">Телефон*</label>
-        <input class="popup__input" type="text" name="user_phone" />
+        <input
+          class="popup__input"
+          type="text"
+          name="user_phone"
+          id="emailId"
+        />
         <label class="popup__label">Ваш e-mail*</label>
-        <input class="popup__input" type="text" name="user_email" />
-        <button type="submit" class="popup__form-btn">Отправить</button>
+        <input
+          class="popup__input"
+          type="text"
+          name="user_email"
+          id="message"
+        />
+        <button onclick="SendMail()" class="popup__form-btn">Отправить</button>
       </form>
     </section>
     <div id="popup-bg"></div>
@@ -434,6 +444,15 @@
       </div>
     </footer>
 
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init('0wsWru7IKiJD08sgf');
+      })();
+    </script>
     <script src="js/main.js"></script>
     <script src="js/formSend.js"></script>
     <!-- <script src="js/libs.min.js"></script>
