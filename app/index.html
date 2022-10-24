@@ -394,25 +394,17 @@
           <img src="images/popupX.svg" alt="close" />
         </button>
       </div>
-      <form action="sendmail.php" method="POST" class="popup__form">
+      <div class="popup__form">
         <label class="popup__label">Ваше имя*</label>
-        <input class="popup__input" type="text" name="user_name" id="inpName" />
+        <input class="popup__input" type="text" id="inpName" required />
         <label class="popup__label">Телефон*</label>
-        <input
-          class="popup__input"
-          type="text"
-          name="user_phone"
-          id="emailId"
-        />
+        <input class="popup__input" type="text" id="inpPhone" required />
         <label class="popup__label">Ваш e-mail*</label>
-        <input
-          class="popup__input"
-          type="text"
-          name="user_email"
-          id="message"
-        />
-        <button onclick="SendMail()" class="popup__form-btn">Отправить</button>
-      </form>
+        <input class="popup__input" type="text" id="inpEmail" required />
+        <button onclick="SendMail()" type="submit" class="popup__form-btn">
+          Отправить
+        </button>
+      </div>
     </section>
     <div id="popup-bg"></div>
 
@@ -450,7 +442,7 @@
     ></script>
     <script type="text/javascript">
       (function () {
-        emailjs.init('0wsWru7IKiJD08sgf');
+        emailjs.init('tED52MPsgaqUpqgEa');
       })();
     </script>
     <script src="js/main.js"></script>

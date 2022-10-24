@@ -1,13 +1,13 @@
 function SendMail() {
   let = params = {
     from_name: document.getElementById('inpName').value,
-    email_id: document.getElementById('emailId').value,
-    message: document.getElementById('message').value,
+    from_phone: document.getElementById('inpPhone').value,
+    from_email: document.getElementById('inpEmail').value,
   };
 
   emailjs
-    .send('service_4pk5vtu', 'template_9tzjkpt', params)
+    .send('service_hezibfo', 'template_29h2bag', params)
     .then(function (res) {
-      alert('success ' + res.status);
+      alert('Спасибо! форма успешно отправлена =) ' + res.status);
     });
 }
