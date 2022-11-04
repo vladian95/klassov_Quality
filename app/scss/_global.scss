@@ -52,3 +52,10 @@ h3 {
   font-size: 22px;
   line-height: 24px;
 }
+
+button {
+  transition: 1s;
+  &:hover {
+    background-color: #0354cb;
+  }
+}

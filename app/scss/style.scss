@@ -11,10 +11,16 @@
   justify-content: space-between;
   align-items: center;
   min-height: 94px;
-  background-color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
   max-width: 1310px;
   margin: 0 auto;
   padding: 0px 15px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 998;
 }
 
 .header__logo--mobile {
@@ -128,7 +134,7 @@
 
 .header__right {
   margin-left: 75px;
-  margin-top: 71px;
+  margin-top: 120px;
 }
 // HEADER
 
@@ -428,7 +434,7 @@
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
   transition: 200ms ease-in-out;
-  z-index: 11;
+  z-index: 1000;
 }
 
 .popup.popup--active {
@@ -509,6 +515,7 @@
   background-color: rgba(0, 0, 0, 0.5);
   pointer-events: none;
   transition: 200ms ease-in-out;
+  z-index: 999;
 }
 
 #popup-bg.popup--active {
@@ -557,4 +564,9 @@
   font-size: 12px;
   line-height: 20px;
   border-top: 1px solid rgba(217, 217, 221, 1);
+  a {
+    color: #fff;
+    font-size: 17px;
+    text-decoration: underline;
+  }
 }
